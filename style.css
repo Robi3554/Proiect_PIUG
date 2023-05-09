@@ -1,0 +1,144 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+.row
+{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+body
+{
+	font-family: unset;
+}
+
+.intro
+{
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
+
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)),url(cupcakes.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+
+h1
+{
+	color: white;
+}
+
+.navigation li
+{
+	display: inline-block;
+	list-style: none;
+	float: right;
+	position: relative;
+	margin-left: 20px;
+}
+
+.navigation li a 
+{
+	color: whitesmoke;
+	text-decoration: none;
+	font-size: 90%;
+	font-weight: bold;
+}
+
+.navigation li a:hover
+{
+	color: #EE82EE;
+	border-bottom: 2px solid #EE82EE;
+	transition: all 0.5s ease-in;
+	padding: 5px 0;
+}
+
+
+.logo img 
+{
+	float: left;
+	height: 100px;
+	margin-top: 30px;
+}
+
+
+.btn 
+{
+	display: inline-block;
+	border: 1px solid #EE82EE;
+	padding: 10px 30px;
+	color: #EE82EE;
+	text-decoration: none;
+	border-radius: 12px;
+}
+
+.button-a
+{
+	margin-top: 50px;
+}
+
+.btn-half:hover
+{
+	background-color: #EE82EE;
+	color: white;
+	transition: all 0.5s ease-in;
+}
+
+.btn-full:hover
+{
+	background-color: #EE82EE;
+	color: white;
+	transition: all 0.5s ease-in;
+}
+
+.copy
+{
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 20px;
+}
+
+h3:after
+{
+	width: 100px;
+	height: 2px;
+	background-color: #EE82EE;
+	display: block;
+	contain: " ";
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.features h3
+{
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+.arranging
+{
+	text-align: justify;
+}
+
+.features i
+{
+	font-size: 50px;
+	color: #EE82EE;
+	margin-left: 25%;
+}
+
+.features h4
+{
+	margin-left: 40px;
+}
