@@ -32,6 +32,7 @@ header
 	height: 100vh;
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 h1
@@ -46,6 +47,7 @@ h1
 	float: right;
 	position: relative;
 	margin-left: 20px;
+	margin-top: 40px;
 }
 
 .navigation li a 
@@ -67,6 +69,7 @@ h1
 
 .logo img 
 {
+	display: inline-block;
 	float: left;
 	height: 100px;
 	margin-top: 30px;
@@ -141,4 +144,37 @@ h3:after
 .features h4
 {
 	margin-left: 40px;
+}
+
+.showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.showcase li {
+	display: block;
+	width: 25%;
+	float: left;
+}
+
+.photos {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.photos img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 0;
+	transform: scale(1.15);
+	transition: all 0.5s;
+}
+
+.photos img:hover {
+	transform: scale(1.05);
+}
+
+.cupcakes {
+	margin-top: 60px;
 }
