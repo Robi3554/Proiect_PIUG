@@ -21,13 +21,12 @@
 	<header>
 		<div class = "row">
 			<div class="logo" style="width: 40%;">
-				<img src="logo2.png">
+				<img src="Images/logo2.png">
 			</div>
 			<ul class="navigation" style="width: 60%">
-				<li><a href="">CUSTOMER OPINIONS</a></li>
-				<li><a href="">WHERE TO FIND US</a></li>
-				<li><a href="">DELIVERY</a></li>		
-				<li><a href="page2.html" target="_self">ABOUT US</a></li>
+				<li><a href="#opinion">CUSTOMER OPINIONS</a></li>
+				<li><a href="#gmap">WHERE TO FIND US</a></li>
+				<li><a href="#info">ABOUT US</a></li>			
 			</ul>
 		</div>
 		<div class="intro">
@@ -35,13 +34,13 @@
 				WELCOME <br>TO CUPCAKE EMPIRE!
 			</h1>
 			<div class="button-a">
-				<li><a href="" class="btn btn-half">Show me more</a></li>	
-				<li><a href="" class="btn btn-full">Order Now!</a></li>
+				<li><a href="#shows" class="btn btn-half">Show me more</a></li>	
+				<li><a href="#order" class="btn btn-full">Order Now!</a></li>
 			</div>			
 		</div>
 	</header>
 
-	<section class="features">
+	<section class="features" id="info">
 		<h3 class="text-center">ANY TYPE OF CUPCAKES WHENEVER YOU NEED THEM!</h3>
 		<p class="copy">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Eget arcu dictum varius duis at consectetur lorem donec. Massa enim nec dui nunc mattis. Ac felis donec et odio pellentesque diam. 
@@ -82,53 +81,56 @@
 		</div>
 	</section>
 
-	<section class="cupcakes">
+	<section class="cupcakes" id="shows">
 		<ul class="showcase">
 			<li>
 				<figure class="photos">
-					<img src="bunny_cup.jpg">
+					<img src="Images/bunny_cup.jpg">
 				</figure>
 			</li>
 			<li>
 				<figure class="photos">
-					<img src="carrot_cup.jpg">
+					<img src="Images/carrot_cup.jpg">
 				</figure>
 			</li>
 			<li>
 				<figure class="photos">
-					<img src="choco_cup.jpg">
+					<img src="Images/choco_cup.jpg">
 				</figure>
 			</li>
 			<li>
 				<figure class="photos">
-					<img src="fruit_cup.jpg">
+					<img src="Images/fruit_cup.jpg">
 				</figure>
 			</li>
 			<li>
 				<figure class="photos">
-					<img src="party_cup.jpg">
+					<img src="Images/party_cup.jpg">
 				</figure>
 			</li>
 			<li>
 				<figure class="photos">
-					<img src="mini_cup.jpg">
+					<img src="Images/mini_cup.jpg">
 				</figure>
 			</li>
 			<li>
 				<figure class="photos">
-					<img src="skittles_cup.jpg">
+					<img src="Images/skittles_cup.jpg">
 				</figure>
 			</li>
 			<li>
 				<figure class="photos">
-					<img src="colour_cup.jpg">
+					<img src="Images/colour_cup.jpg">
 				</figure>
 			</li>
 		</ul>
 	</section>
 
-	<h2>Google Map Example</h2>  
-	<div id="map" style="width:1000px;height:1000px;background:green"></div>
+	<section class="map_text"  id="gmap">
+		<h3 class="fa fa-map-marker" style="width: 40%;">Where can you find us</h3>  
+		<div id="map" style="width:1200px;height:500px;background:green"></div>
+	</section>
+
 <script>  
 function Map123() {  
 var mapOptions = {  
@@ -148,6 +150,91 @@ var markerOptoins ={
 </script>  
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtYb9hkRJFdAt3qcsfPPDDeabxkdO9mf8&callback=Map123"></script>
 
+<form>
+	<section class="order" id="order">
+		<h3 class="text-center">YOU CAN OREDER WHATEVER CUPCAKE YOU DESIRE!</h3>
+		</div>
+
+		<div class="row gap">
+			<div class="col-md-4">
+				<input type="text" placeholder="Name" class="form-control" required><br>
+				<input type="text" placeholder="Adress" class="form-control" pattern=".+@*\.com" size="30" required><br>
+				<input type="tel" placeholder="Phone Number" class="form-control" pattern="0[0-9]{9}" required><br>
+				<input type="checkbox"> <label>Surprise Me!</label><br><br>
+				<label>If you check this box you agree to let us customize your cupcakes however we want!</label>
+			</div>
+
+			<div class="col-md-8">
+				<textarea class="form-control" rows="8" placeholder="comments (if you leave this field empty and don't check the Surprise Me box we will give you plain cupcakes. You have been warned!!!)"></textarea>
+					<button class="btn btn-warning btn-block">Submit</button>
+			</div>
+		</div>
+	</section>
+	</form>
+
+	<section class="testimonials"  id="opinion">
+		<h3 class="text-center">Take a look at what our customers say about us!</h3>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<blockquote>
+						<p>
+							I didn't expect much at first, I only wanted a couple of cupcakes for my sweet tooth,
+							but colour me impressed, when I got my hands on them puppies I was just munchin, on them like
+							I haven't eaten in ages.And when I say puppies, they were literal puppies, Jesus, I haven't seen 
+							such craftmanship in a long time. Clearly my best buy this month by far. 
+						</p>
+						<cite><img src="Images/Danny.jpg"> Danny DeVito</cite>
+					</blockquote>
+				</div>
+
+				<div class="col-md-4">
+					<blockquote>
+						<p>
+							When we went to Romania on holiday, me and my family, we passed this city and my daughter recognized it 
+							because a friend of hers gave her some cupcakes from a certain bakery. My daughter wanted to buy some for
+							the road and she wanted us to have a try as well. When we got the cupcakes we were amazed by how beatiful they 
+							were and they also tasted amazing. If this bakery were around the time of my bodybuilding days I might have had
+							a couple more cheat days. 
+						</p>
+						<cite><img src="Images/Arnold.jpg"> Arnold Scharzenegger</cite>
+					</blockquote>
+				</div>
+
+				<div class="col-md-4">
+					<blockquote>
+						<p>
+							The cupcakes were simply wonderful. The texture, the taste, the presentation, all of these were amazing
+							You can see the time and effort spent on these cupcakes and with each bite you just start to feel a little
+							sad about ruinnig the beatiful art that these bakers have  made.
+						</p>
+						<cite><img src="Images/Michelle.jpg"> Michelle Obama</cite>
+					</blockquote>
+				</div>				
+			</div>
+		</div>		
+	</section>
+
+<form>
+	<section class="form">
+		<div class="container">
+			<h3 class="fa fa-pencil-square-o">WE WOULD BE HAPPY TO HEAR FROM YOU!</h3>
+		</div>
+
+		<div class="row gap">
+			<div class="col-md-4">
+				<input type="text" placeholder="Username" class="form-control" required><br>
+				<input type="text" placeholder="E-mail" class="form-control" pattern=".+@globex\.com" size="30" required><br>
+				<input type="password" placeholder="Password" class="form-control" required><br>
+			</div>
+
+			<div class="col-md-8">
+				<textarea class="form-control" rows="8" placeholder="comments"></textarea>
+					<button class="btn btn-warning btn-block">Submit</button>
+			</div>
+		</div>
+	</section>
+</form>
 	<script> 
 	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" 
 	integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" 
