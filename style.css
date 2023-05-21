@@ -15,9 +15,17 @@ html{
 	margin: 0 auto;
 }
 
-body
-{
-	font-family: unset;
+
+
+body {
+  font-family: unset;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 .intro
@@ -29,6 +37,25 @@ body
 	transform: translate(-50%,-50%);
 
 }
+
+input[type="text"], textarea {
+
+  background-color : #d1d1d1; 
+
+}
+
+input[type="tel"], textarea {
+
+  background-color : #d1d1d1; 
+
+}
+
+input[type="password"], textarea {
+
+  background-color : #d1d1d1; 
+
+}
+
 
 header
 {
@@ -220,6 +247,11 @@ h3:after
 	color: #fff;
 	border-radius: 4px;
 	margin-top: 20px;
+	transition: all 0.5s ease-in;
+}
+
+.btn-warning2{
+	background-color: transparent;
 }
 
 .gap {

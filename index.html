@@ -36,9 +36,17 @@
 			<div class="button-a">
 				<li><a href="#shows" class="btn btn-half">Show me more</a></li>	
 				<li><a href="#order" class="btn btn-full">Order Now!</a></li>
+				<button onclick="myFunction()" class="btn btn-half">Toggle dark mode</button>
 			</div>			
 		</div>
 	</header>
+
+	<script>
+	function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+	}
+	</script>
 
 	<section class="features" id="info">
 		<h3 class="text-center">ANY TYPE OF CUPCAKES WHENEVER YOU NEED THEM!</h3>
